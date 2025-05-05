@@ -1,0 +1,372 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+    transition: 0.9s;
+}
+header{
+    display: flex;
+    text-align: center;
+    position: fixed;
+    justify-content: space-between;;
+    z-index: 3;
+}
+nav{
+    margin-top: 35px;
+    margin-left: 50px;
+    background-color: #f3e7cb;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    font-family: 'Namafontku4', sans-serif;
+}
+nav a{
+    padding: 15px 25px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 200;
+    cursor: pointer;
+    color: rgb(176, 50, 50);
+    z-index: 2;
+    border-radius: 20px;
+}
+nav a:hover{
+    background-color: rgba(83, 150, 42, 0.647);
+    background: linear-gradient(to bottom, rgba(156, 200, 129, 0.859), rgba(99, 135, 76, 0.801));
+    color: #ffffff;
+    box-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5);
+    transition: 0.5s;
+}
+.logo-area{
+    width: 50%;
+    margin: 0 15px;
+    align-items: center;
+    transition: 0.9s;
+}
+.logo-area:hover{
+    transform: rotate(360deg);
+}
+
+
+section.home{
+    background: url('bg1.PNG') no-repeat center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    height: 800px;
+    z-index: 1;
+}
+section.home::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 250px; 
+    background: linear-gradient(to bottom, rgba(255, 244, 200, 0), #fffdf8); 
+    z-index: 1;
+    pointer-events: none;
+}
+section.home .content{
+    text-align:left;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+@font-face {
+    font-family: 'Namafontku';
+    src: url('Sweets\ Smile.ttf') format('truetype')
+}
+section.home .content h1{
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    font-size: 75px;
+    text-shadow: 1px 1px 10px rgba(1, 1, 3, 0.5);
+    font-family:'Namafontku', sans-serif;
+    line-height: 2px;
+}
+@font-face {
+    font-family: 'Namafontku3';
+    src: url('Howdy\ Koala.ttf') format('truetype')
+}
+section.home .content p{
+    font-family: 'Namafontku3', sans-serif;
+    color: #437a35;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+    font-size: 18px;
+}
+@font-face {
+    font-family: 'Namafontku2';
+    src: url('buttons.ttf') format('truetype')
+}
+section.home .content a{
+    text-decoration: none;
+    background-color: #437a35;
+    color: rgb(216, 243, 189);
+    padding: 3px 10px;
+    font-family: 'Namafontku2', sans-serif;
+}
+section.home img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+section.home img:hover{
+    margin-bottom: 200px;
+    cursor: pointer;
+    animation: goyang 0.5s;
+}
+
+
+section.about{
+    background: url('bg3.PNG') no-repeat;
+    background-size: cover;
+    height: 850px;
+    display: flex;
+}
+section.about img{
+    margin-left: 200px;
+    margin-right: 30px;
+    margin-top: 180px;
+    box-shadow: 1px 1px 100px rgba(255, 255, 255, 0.5);
+    transition: 0.8s;
+}
+@keyframes gemoy{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+section.about img:hover{
+    cursor: pointer;
+    animation: gemoy 0.8s;
+}
+section.about .kami{
+    margin-left: 100px;
+    margin-right: 80px;
+    margin-bottom: 300px;
+    margin-top: 300px;
+    text-align: center;
+}
+section.about .kami h1{
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: rgb(86, 145, 59);
+    font-size: 60px;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.379);
+    font-family:'Namafontku', sans-serif;
+}
+section.about .kami p{
+    margin-bottom: 70px;
+    font-size: 23px;
+    box-shadow: 1px 1px 20px rgba(1, 1, 3, 0.5);
+    background-color: #437a35;
+    color: rgb(216, 243, 189);
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    border-radius: 10px;
+    padding: 40px 5px;
+    font-family: 'Namafontku4', sans-serif;
+}
+
+
+section.product{
+    background: url('bg4.PNG') no-repeat fixed;
+    background-size: cover;
+    height: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.product h1{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 120px;
+    margin-bottom: 0px;
+    font-size: 65px;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    font-family:'Namafontku', sans-serif;
+}
+section.product .container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.product .container .card{
+    background-color: white;
+    position: relative;
+    width: 300px;
+    height: 260px;
+    margin: 20px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+}
+section.product .container .card .img{
+    width: 100%;
+}
+section.product .container .card .deskripsi h2{
+    font-family: 'Namafontku3', sans-serif;
+    color: #437a35;
+    background-color: #fffefdc1;
+    padding: 5px 5px;
+}
+section.product .container .card .deskripsi{
+    position: absolute;
+    font-family: 'Namafontku3', sans-serif;
+    top: 210px;
+    padding: 0px 10px;
+    transition: 0.5s;
+}
+section.product .container .card .deskripsi h3{
+    font-family: 'Namafontku4', sans-serif;
+    color: rgb(227, 187, 99);
+    background-color: #d04242fb;
+    height: 25px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 68px;
+}
+section.product .container .card:hover .deskripsi{
+    top: 0px;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    transition: 0.5s;
+}
+section.product .container .card .deskripsi a{
+    text-decoration: none;
+    background-color: #3f7e2d;
+    color: white;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+section.product .container .card .deskripsi a:hover{
+    background-color: rgb(176, 50, 50);
+    transition: 0.3s;
+}
+@keyframes goyang{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(-3deg);
+    }
+    75%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+section.product .container .card:hover{
+    box-shadow: 0 0 5px white;
+    transition: 0.3s;
+    animation: goyang 0.5s;
+}
+
+
+section.contact{
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('bg6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    padding: 50px 0;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+section.contact .row{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 250px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 200px;
+}
+section.contact .row .map{
+    height: 450px;
+    object-fit: cover;
+    margin-top: 0px;
+}
+section.contact .kontak{
+    background: #f1e69cd9;
+    padding: 30px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    height: 420px;
+    text-align: center;
+    color: rgb(111, 85, 24);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+section.contact .kontak:hover{
+    background-color: rgba(83, 150, 42, 0.647);
+    transition: 0.5s;
+    color: #fffaef;
+}
+section.contact .kontak h1{
+    font-size: 40px;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    font-family:'Namafontku', sans-serif;
+    margin-top: 0px;
+}
+@font-face {
+    font-family: 'Namafontku4';
+    src: url('Alphakind.ttf') format('truetype')
+}
+section.contact .kontak p{
+    font-family: 'Namafontku4', sans-serif;
+}
+
+
+footer{
+    background-color:#f6e5c0;
+    height: 30px;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    position: relative;
+}
+footer .medsos{
+    justify-content: center;
+}
+footer .medsos a{
+    color: rgb(11, 80, 11);
+    font-size: 20px;
+    padding: 5px 20px;
+}
+footer .medsos a:hover{
+    color:#715821;
+    transition: 0.5s;
+}
